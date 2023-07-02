@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JorgeDevlop</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Jorge Martinez</h1>
+            <h2>Ingeniero en Sistemas - Desarrollador Junior</h2>
+            <div class="redes">
+                 <a href="#"><i class="fa-brands fa-discord"></i></a>
+                 <a href="https://github.com/JorgeDevlop"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/jorgedevlop/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jorge Martinez.</span> Un entusiasta desarrollador de software junior. Mi pasión por la programación y la resolución de problemas me ha llevado a adentrarme en el mundo del desarrollo de software.
+Tengo experiencia trabajando con una variedad de tecnologías, incluyendo PHP, Laravel, C, HTML y JavaScript. Me encanta utilizar estas herramientas para crear aplicaciones web interactivas y eficientes. 
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-01-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            33 16329436
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            martinezromerojorgemiguel@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Guadalajara Jalisco, Mexico
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                    
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                       
+                        <div class="interes">
+                           <i class="fa-solid fa-pencil"></i>
+                            <span>DIBUJO</span>
+                        </div>
+                         <div class="interes">
+                        <i class="fa-solid fa-mug-hot"></i>
+                           <span>CAFE</span>
+                    </div>
+                    <div class="interes">
+                    <i class="fa-brands fa-youtube"></i>
+                     <span>YOUTUBE</span>
+                     </div>
+                </div>
+            </div>
+           </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>46%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>56%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lenguaje C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>48%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP-Laravel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Organizacion y Gestion de tiempo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Maestria en Ciencias Computacionales y Telecomunicaciones </h4>
+                        <span class="casa">Universidad  Utel</span>
+                        <span class="fecha">Mayo 2023 - Actualmente</span>
+                        <p>Maestría en Ciencias Computacionales y Telecomunicaciones: Conocimientos avanzados en ciencias de la computación y tecnologías de telecomunicaciones. Experiencia en diseño y gestión de sistemas informáticos y de comunicación. Habilidades en desarrollo de software, seguridad informática y redes. Interés en investigación y desarrollo tecnológico.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en Sistemas Computacionales</h4>
+                        <span class="casa">Universidad Utel</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Ingeniería en Sistemas Computacionales: Profesional en el diseño, desarrollo y gestión de sistemas informáticos. Amplio conocimiento en programación, bases de datos, redes y seguridad informática. Experiencia en análisis de requerimientos, implementación de soluciones tecnológicas y trabajo en equipo. Habilidades en resolución de problemas y adaptabilidad a nuevas tecnologías.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnologo Prof Mecanica Industrial</h4>
+                        <span class="casa">Politecnica de Guadalajara</span>
+                        <span class="fecha">2013 - 2017</span>
+                        <p>Mantenimiento industrial: Realización de mantenimiento preventivo y correctivo de maquinaria y equipos industriales, incluyendo tareas de lubricación, ajuste y calibración.
+CNC: Amplia experiencia en programación y operación de máquinas de control numérico computarizado (CNC) para fabricación y mecanizado de piezas.
+Automatización industrial: Participación en proyectos de automatización industrial, programación de robots y sistemas de control, integración de sensores y controladores.
+Mejora de procesos: Aplicación de técnicas de ingeniería industrial para identificar oportunidades de mejora, aumentar la eficiencia y reducir costos en los procesos productivos.
+Gestión de proyectos: Coordinación y supervisión de proyectos relacionados con la mecánica industrial, asegurando el cumplimiento de objetivos y plazos.
+Diseño y equipos industriales: Conocimientos sólidos en diseño asistido por computadora (CAD) y experiencia en el desarrollo y fabricación de maquinaria y equipos industriales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Freelancer</h4>
+                        <span class="casa">Independiente</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p>Freelancer:Profesional independiente con habilidades en mi campo de especialización. Experiencia en trabajar de manera autónoma, cumpliendo plazos y entregando resultados de calidad. Capacidad para colaborar con diferentes clientes y adaptarme a proyectos variados. Excelente comunicación y compromiso con la satisfacción del cliente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Sofware Developer</h4>
+                        <span class="casa">Bixu</span>
+                        <span class="fecha">Enero 2022 - Actualmente</span>
+                        <p>Como pasante de desarrollo de software, he adquirido una valiosa experiencia en varios aspectos del ciclo de vida del desarrollo de software. He contribuido activamente al diseño, desarrollo y prueba de aplicaciones de software bajo la guía de desarrolladores senior. Mis responsabilidades incluían escribir código, depurar y solucionar problemas, y ayudar al equipo a brindar soluciones de software de alta calidad. He trabajado con tecnologías como C, Python y JavaScript, y tengo experiencia con frameworks como Django y Spring. Además, he demostrado sólidas habilidades para resolver problemas y la capacidad de aprender rápidamente nuevas tecnologías y lenguajes de programación. A lo largo de mi pasantía, he demostrado dedicación, una sólida ética de trabajo y pasión por ofrecer soluciones de software eficientes y escalables. Tengo muchas ganas de ampliar aún más mis habilidades y contribuir a proyectos innovadores como desarrollador de software.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mexico, Jalisco Gdl
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3316 - 329436 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: martinezromerojorgemiguel@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
